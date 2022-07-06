@@ -36,7 +36,7 @@ public class Test_8 {
             byte[] buf = new byte[1];
             ;
 
-            for (int i = 0; i < length * (float) 44100 / 1000; i++) { //i < 1000 длина
+            for (int i = 0; i < length * (float) 44100 / 1000; i++) { //
                 double angle = i / ((float) 44100 / 150) * 10.0 * Math.PI;
                 System.out.println(angle);
                 buf[0] = (byte) (Math.sin(angle) * 150);
@@ -45,7 +45,7 @@ public class Test_8 {
             }
             System.out.println("******************");
 
-            for (int i = 0; i < length * (float) 44100 / 1000; i++) { //i < 1000 длина
+            for (int i = 0; i < length * (float) 44100 / 1000; i++) { // 300
                 double angle = i / ((float) 44100 / 150) * 5.0 * Math.PI;
                 System.out.println(angle);
                 buf[0] = (byte) (Math.sin(angle) * 150);
