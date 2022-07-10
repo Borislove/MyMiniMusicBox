@@ -54,6 +54,10 @@ public class Test_8_1 {
         for (int i = 0; i < length * (float) 44100 / 1000; i++) { //
             double angle = i / ((float) 44100 / 150) * d * Math.PI;
             buf[0] = (byte) (Math.sin(angle) * 150);
+
+            /*double angle = i/(float)450*Math.PI;
+            buf[0] = (byte) (Math.sin(angle) * 150);*/
+
             sourceDataLine.write(buf, 0, 1);
         }
         close();
@@ -101,18 +105,23 @@ public class Test_8_1 {
         for (int i = 0; i < 3; i++) {
             test3(2.0);
             test3(1.0);
-        }*/
+        }
 
+        test3(2.2);
+        test3(2.2);
+        test3(2.2);
+        test3(2.2);
+*/
       //---------------------------------------------------------------
 
-        test3(22.1);
+      /*  test3(22.1);
         test3(22.2);
         test3(22.3);
         test3(22.4);
         test3(22.5);
         test3(22.6);
         test3(22.6);
-        test3(22.6);
+        test3(22.6);*/
 
         /*test3(2.1);        test3(2.1);
         test3(2.1);
@@ -126,6 +135,23 @@ public class Test_8_1 {
         test3(2.1);        test3(2.1);
         test3(2.1);
 */
+
+      //  test3(55);
+        /*test3(65);
+        test3(75);
+        test3(85);
+        test3(85);
+        test3(90);
+        test3(65);
+        test3(305);
+        test3(405);
+        test3(505);
+        test3(705);
+        test3(905);
+        test3(1000);
+        test3(1000);
+        test3(1000);*/
+        test3(2000,999);
 
     }
 }
