@@ -43,10 +43,17 @@ public class Test_9 {
 
     public static void sine(float wavevolume) {
 
-        float period = samplerate / wavefrequency / 2;
-        n = wavevolume * Math.sin(150 * Math.PI / period);
-        buf[0] = (byte) (Math.sin(n) * 150);
-        sourceDataLine.write(buf, 0, 1);
+        int length = 300;
+
+        for (int i = 0; i < length; i++) {
+
+            float a = 123;
+            //float period = samplerate / wavefrequency / 2;
+            //n = wavevolume * Math.sin(150 * Math.PI / period);
+            buf[0] = (byte) (a*i);
+
+            sourceDataLine.write(buf, 0, 1);
+        }
     }
 
 
